@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 	monochrome = true,
 	features = { "src/test/resources/com//basic/gha_ff" },
-	glue = {"com/basic/gha_sd" }
+	glue = { "com/basic/gha_sd" },
+	plugin = { "pretty", "html:target/cucumber-htmlreport","json:target/cucumber-report.json" }
 	)
 
 public class Rungha_sd_file {
