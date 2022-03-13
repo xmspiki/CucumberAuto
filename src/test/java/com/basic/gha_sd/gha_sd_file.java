@@ -21,21 +21,21 @@ public class gha_sd_file {
 	@When("^See the testimonials$")
 	public void see_the_testimonials() throws Throwable {
 		driver.findElement(By.xpath("//a[@href=\"#velemenyek\"]")).click();
-	    System.out.println("Vélemények");
+		System.out.println("Vélemények");
 	}
 
 	@Then("^See the prices$")
 	public void see_the_prices() throws Throwable {
 		Thread.sleep(2000);
-	    driver.findElement(By.xpath("//a[@href=\"#arak\"]")).click();
-	    System.out.println("Árak");
+		driver.findElement(By.xpath("//a[@href=\"#arak\"]")).click();
+		System.out.println("Árak");
 	}
 
 	@Then("^Close the browser$")
 	public void close_the_browser() throws Throwable {
 		Thread.sleep(5000);
-	    driver.quit();
-	    driver = null;
+		driver.quit();
+		driver = null;
 	}
 
 }
